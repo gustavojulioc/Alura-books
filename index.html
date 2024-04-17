@@ -1,301 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="/Styles/style.css">
-  <link rel="stylesheet" href="/Styles/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <title>Alura Books</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratado de Anestesiologia SAESP</title>
+    <link rel="stylesheet" href="/Estilos/styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/Estilos/carroussel.css">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <div class="container">
-      <input type="checkbox" id="menu" class="container__botao">
-      <label for="menu" class="container__rotulo">
-        <span class="cabecalho__menu__hamburger container__imagem"></span>
-      </label>
-      <ul class="lista__menu">
-          <li class="lista__menu__titulo">Categorias</li>
-          <li class="lista__menu__item">
-            <a href="#" class="lista__menu__link">Programação</a>
-          </li>
-          <li class="lista__menu__item">
-            <a href="#" class="lista__menu__link">Font-end</a>
-          </li>
-          <li class="lista__menu__item">
-            <a href="#" class="lista__menu__link">Infraestrutura</a>
-          </li>
-          <li class="lista__menu__item">
-            <a href="#" class="lista__menu__link">Busines</a>
-          </li>
-          <li class="lista__menu__item">
-            <a href="#" class="lista__menu__link">Desing e UX</a>
-          </li>
-        </ul>
-      <img src="/Assents/Logo.svg" alt="Logo Alura">
-      <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>books</h1>
-    </div>
-    <ul class="opcoes">
-        <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-      <label for="opcoes-menu" class="opcoes__rotulo">
-        <li class="opcoes__item">CATEGORIAS</li>
-      </label>
-      <ul class="lista__menu">
-        <li class="lista__menu__item">
-          <a href="#" class="lista__menu__link">Programação</a>
-        </li>
-        <li class="lista__menu__item">
-          <a href="#" class="lista__menu__link">Font-end</a>
-        </li>
-        <li class="lista__menu__item">
-          <a href="#" class="lista__menu__link">Infraestrutura</a>
-        </li>
-        <li class="lista__menu__item">
-          <a href="#" class="lista__menu__link">Busines</a>
-        </li>
-        <li class="lista__menu__item">
-          <a href="#" class="lista__menu__link">Desing e UX</a>
-        </li>
-      </ul>
-      <li class="opcoes__item"><a href="#" class="opcoes__link">FAVORITOS</a></li>
-      <li class="opcoes__item"><a class="opcoes__link" href="#">MINHA ESTANTE</a></li>
-    </ul>
-    <div class="container">
-      <a href="#">
-        <img class="container__imagem-fav container__imagem" src="/Assents/Favoritos.svg" alt="Meus favoritos">
-      </a>
-      <a href="#" class="container__link">
-        <img class="container__imagem" src="/Assents/Compras.svg" alt="Carinho de compras">
-        <p class="container__texto">Minha sacola</p>
-      </a>
-      <a href="#" class="container__link">
-        <img class="container__imagem" src="/Assents/Usuário.svg" alt="Meu perfil">
-        <p class="container__texto">Meu perfil</p>
-      </a>
-    </div>
-  </header>
-  <section class="banner">
-    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
-  </section>
-  <section class="carrossel">
-    <h2 class="carrossel__titulo">Novos lançamentos</h2>
-    <div class="carrossel__container">
-          <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-pagination"></div>
+    <header class="cabecalho" id="cabecalho">
+        <nav class="cabecalho__menu">
+            <div class="cabecalho__menu__links">
+                <a  class="cabecalho__menu__link" href="#cabecalho">Home</a>
+                <a  class="cabecalho__menu__link" href="#sobre__livro">Sobre o livro</a>
+                <a  class="cabecalho__menu__link" href="#sobre__autores">Autores</a>
+                <a  class="cabecalho__menu__link" href="#preview">Preview</a>
+            </div>
+            <a target="_blank" class="cabecalho__menu__botao" href="http://www.editoradoseditores.com.br/">Comprar</a>
+        </nav>
+        <section class="cabecalho__banner">
+            <div class="cabecalho__banner__infos">
+                <h1>TRATADO DE</h1>
+                <img class="cabecalho__banner__titulo" src="/Assents/Tratado_de_anestesiologia_titulo.svg"
+                    alt="Titulo do livro Tratado de Anestesiologia SAESP">
+                <h2 class="titulo">Volume 1 e 2</h2>
+                <p class="cabecalho__banner__infos__chamada">Compre o seu exemplar com <strong>preço especial</strong>
+                    no período de <strong>25 a 28 de abril!</strong></p>
+                <div class="cabecalho__botoes">
+                    <a target="_blank" href="http://www.editoradoseditores.com.br/" class="cabecalho__botoes__comprar" target="_blank">Comprar Livro<img class="seta__responsiva"src="/Assents/seta.svg" alt="Comprar"></a>
+                    <div class="cabecalho__botao azul"><a class="botao__baixar" href="/documentos/Zero-anestesiologia.pdf" download><img class="cabecalho__botoes__seta" src="/Assents/download.svg"
+                              alt="Download">
+                          <div class="cabecalho__botoes__download">
+                              <p class="cabecalho__botoes__fazer">Fazer</p>
+                              <p class="cabecalho__botoes__download">Download</p>
+                          </div>
+                        </a>
+                                </div>
+                </div>
+                <div class="cabecalho__banner__logos">
+                    <img class="logos" src="/Assents/Saesp.svg" alt="Logo SAESP">
+                    <img class="logos" src="/Assents/Editora dos editores.svg" alt="Logo Editora dos Editores">
+                </div>
+            </div>
+            <img class="cabecalho__banner__imagem" src="/Assents/Livro_tratado_de anestesiologia_saesp.svg"
+                alt="Livro Tratado de Anestesiologia SAESP">
+        </section>
+    </header>
+    <main>
+        <section class="sobre__livro" id="sobre__livro">
+            <div class="livro">
+                <div class="livro__imagem">
+                    <img class="livro__imagem__livro" src="/Assents/Sobre_o _livro.svg" alt="Capa do livro Tratado de Anestesiologia SAESP">
+                    <li class="sobre__botao__lista">
+                      <ul class="sobre__botao_comprar"><a target="_blank" class="comprar__link" href="http://www.editoradoseditores.com.br/">Adquira o seu! <img class="sobre__botao__seta" src="/Assents/seta copy.svg" alt="comprar"></a></ul>
+                      <ul class="sobre__botao_baixar"><a target="_blank" class="botão__braanco" href="/documentos/Zero-anestesiologia.pdf" download><img class="sobre__botao__download" src="/Assents/download.svg" alt="preview">Download </a></ul>
+                    </li>
+                </div>
+                <div class="livro__informacoes">
+                    <h2 class="livro_sobre">Sobre o livro:</h2>
+                    <p class="livro_texto">Explore a décima edição ampliada e revisada do Tratado de Anestesiologia
+                        SAESP, um clássico da Anestesiologia Brasileira. Criado pelos editores com base nos principais
+                        temas das provas para o título superior em anestesiologia e no currículo praticado nos centros
+                        de ensino e treinamentos de anestesiologia em todo o Brasil. Descubra uma fonte confiável e
+                        abrangente para sua formação e prática profissional.</p>
+                    <ul class="livro__lista">
+                        <li class="livro__lista__item"><img src="/Assents/check.svg" alt="Ícone de marca de seleção">Editora das Editoras; 10ª
+                            edição - 2 volumes (abril 2024)</li>
+                        <li class="livro__lista__item"><img src="/Assents/check.svg" alt="Ícone de marca de seleção">Capa dura.</li>
+                        <li class="livro__lista__item"><img src="/Assents/check.svg" alt="Ícone de marca de seleção">N° de páginas.</li>
+                        <li class="livro__lista__item"><img src="/Assents/check.svg" alt="Ícone de marca de seleção">Baixe o pre-view e conheça todo
+                            o conteúdo.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="video__001"><video class="arquivo__video" src="/Assents/WhatsApp Video 2024-04-16 at 21.04.52.mp4" controls width="1080" height="520">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            </div>
 
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="/Assents/ApacheKafka.svg" alt="Livro sobre Apache Kafka e spring boot da Alura Books"></div>
-          <div class="swiper-slide"><img src="Assents/Liderança.svg" alt="Livro sobre liderança em design"></div>
-          <div class="swiper-slide"><img src="Assents/Javascript.svg" alt="Livro sobre Javascript"></div>
-          <div class="swiper-slide"><img src="Assents/Guia Front-end.svg" alt="Livro sobre guia Front-end"></div>
-          <div class="swiper-slide"><img src="Assents/Portugol.svg" alt="Livro sobre Portugol"></div>
-          <div class="swiper-slide"><img src="Assents/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
+            <div class="video__002"><video class="arquivo__video" src="/Assents/WhatsApp Video 2024-04-16 at 21.04.52.mp4" controls width="420" height="340">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="video__003"><video class="arquivo__video" src="/Assents/WhatsApp Video 2024-04-16 at 21.04.52.mp4" controls width="300" height="220">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+        </section>
+        <section class="sobre__autores" id="sobre__autores">
+            <h2 class="sobre__autores-titulo">Sobre os Autores</h2>
+            <div class="carousel">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                  <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Claudia Marquez Simões.svg" alt="Claudia Simões">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Ghilherme Antonio Moreira de Barros.svg" alt="Guilherme Barros">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Leonardo Teixeira Domingues Duarte.svg" alt="Leonardo Duarte">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Luis Henrique Cangiani.svg" alt="Luis Cangiani">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Luis Vicente Garcia.svg" alt="Luis Garcia">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Luiz Marciano Cangiani.svg" alt="Luiz Cangiani">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Marcio Matsumoto.svg" alt="Marcio Matsumoto">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Maria José Carvalho Carmona.svg" alt="Maria José Carmona">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Mariana Fontes Lima Neville.svg" alt="Mariana Neville">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Vanessa Henriques Carvalho.svg" alt="Vanessa Carvalho">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="slide__imagem" src="/cards/Vinicius Caldeira Quintão.svg" alt="Vinicius Quintão">
+                      </div>
+                  </div>
+                </div>
+                  <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
           
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+                  <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-      
-      
-
-      <div class="card">
-        <div class="card__descricao">
-          <div class="descricao">
-            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-            <h2 class="descricao__titulo__livro">Angular 11 e Firebase</h2>
-            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            
+        </section>
+        <section class="preview" id="preview">
+            <h2 class="preview__titulo">Baixe o preview da 10ª edição do Tratado de Anestesiologia SAESP e mergulhe nos
+                principais temas e conteúdos desta obra essencial.</h2>
+            <img class="livro__aberto" src="/Assents/SVG/livro aberto_1.svg"
+                alt="Livro Aberto Tratado de Anestesiologia SAESP">
+            <div class="cabecalho__botao azul"><a class="botao__baixar" href="/documentos/Zero-anestesiologia.pdf" download><img class="cabecalho__botoes__seta" src="/Assents/download.svg"
+              alt="Download">
+          <div class="cabecalho__botoes__download">
+              <p class="cabecalho__botoes__fazer">Fazer</p>
+              <p class="cabecalho__botoes__download">Download</p>
           </div>
-          <img src="/Assents/Angular.svg" alt="Livro Angular" class="descricao__imagem">
-        </div>
-        <div class="card__botoes">
-          <ul class="botoes">
-            <li class="botoes__item"><img src="/Assents/Frame 161.svg" alt="Favoritos"></li>
-            <li class="botoes__item"><img src="/Assents/Frame 162.svg" alt="adicionar no carrinho de compras"></li>
-          </ul>
-          <ul>
-            <a href="#" class="botoes__ancora">Saiba Mais</a>
-          </ul>
-        </div>
-      </div>
-    </div>  
-      <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
-          <!-- Slider main container -->
-    <div class="carrossel__container">
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="/Assents/ApacheKafka.svg" alt="Livro sobre Apache Kafka e spring boot da Alura Books"></div>
-          <div class="swiper-slide"><img src="Assents/Liderança.svg" alt="Livro sobre liderança em design"></div>
-          <div class="swiper-slide"><img src="Assents/Javascript.svg" alt="Livro sobre Javascript"></div>
-          <div class="swiper-slide"><img src="Assents/Guia Front-end.svg" alt="Livro sobre guia Front-end"></div>
-          <div class="swiper-slide"><img src="Assents/Portugol.svg" alt="Livro sobre Portugol"></div>
-          <div class="swiper-slide"><img src="Assents/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
-          
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-
-      <div class="card">
-        <div class="card__descricao">
-          <div class="descricao">
-            <img src="/Assents/Estrelinhas.svg" alt="Estrelas" class="descricao__estrelinhas">
-            <h3 class="descricao__titulo">Autora do Mês</h3>
-            <h2 class="descricao__titulo__livro">Juliana Agarikov</h2>
-            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+        </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <section class="final">
+        <img class="logo__rodape" src="/Assents/Editora dos editores.svg" alt="Logo editora das editoras">
+        <div class="rodape">
+          <h2 class="rodape_01">TRATADO DE</h2>
+          <img class="cabecalho__banner__titulo" src="/Assents/Tratado_de_anestesiologia_titulo.svg"
+              alt="Titulo do livro Tratado de Anestesiologia SAESP">
+          <h2 class="titulo">Volume 1 e 2</h2>
+          <p class="cabecalho__banner__infos__chamada">Compre o seu exemplar com <strong>preço especial</strong> no
+              período de <strong>25 a 28 de abril!</strong></p>
+          <div class="cabecalho__botoes">
+              <a href="http://www.editoradoseditores.com.br/" class="cabecalho__botoes__comprar">Comprar Livro<img src="/Assents/seta.svg" alt="Comprar"></a>
+              <div class="cabecalho__botao">
+                <a class="botao__baixar" href="/documentos/Zero-anestesiologia.pdf" download><img class="cabecalho__botoes__seta" src="/Assents/download.svg"
+                      alt="Download">
+                  <div class="cabecalho__botoes__download">
+                      <p class="cabecalho__botoes__fazer">Fazer</p>
+                      <p class="cabecalho__botoes__download">Download</p>
+                  </div>
+                </a>
+              </div>
           </div>
-          <img src="/Assents/Perfil-escritora 1.svg" alt="Foto da escritora" class="descricao__imagem">
         </div>
-        <div class="card__botoes">
-          <ul class="botoes">
-            <li class="botoes__item"><img src="/Assents/Frame 161.svg" alt="Favoritos"></li>
-            <li class="botoes__item"><img src="/Assents/Frame 162.svg" alt="adicionar no carrinho de compras"></li>
-          </ul>
-          <ul>
-            <a href="#" class="botoes__ancora">Saiba Mais</a>
-          </ul>
+        <div class="final__institucional">
+          <h3 class="final__institucional-titulo">Institucional</h3>
+          <a class="final__institucional-link" target="_blank" href="https://www.editoradoseditores.com.br/empresa">Sobre a empresa Editora dos Editores</a>
+          <a class="final__institucional-link" target="_blank" href="https://www.editoradoseditores.com.br/privacidade">Política de Privacidade</a>
+          <a class="final__institucional-link" target="_blank" href="https://www.editoradoseditores.com.br/contato">Contato</a>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="topicos">
-    <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-    <ul class="topicos__lista">
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Android</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Marketing Digital</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Agile</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Startups</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">HTML & CSS</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Python</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">OO</a>
-      </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Java</a>
-      </li>
-    </ul>
-  </section>
-  <section class="contato">
-    <div class="contato__descricao">
-      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-      <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-    </div>
-    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
-  </section>
+        <div class="final__institucional contato" >
+          <h3 class="final__institucional-titulo">Contato</h3>
+          <a class="final__institucional-link" target="_blank" href="tel:+551125383117"><img class="institucional__img" src="/Assents/fone icon.svg" alt="Telefone icone"> (11) 2538-3117</a>
+          <a class="final__institucional-link" target="_blank" href="https://www.editoradoseditores.com.br/empresa"> <img class="institucional__img" src="/Assents/email icon.svg" alt="e-mail icone">contato@editoradoseditores.com.br</a>
+          <a class="final__institucional-link" target="_blank" href="https://wa.me/55+11983080227"><img class="institucional__img" src="/Assents/whatsapp icon.svg" alt="e-mail icone">(11)9 8308-0227</a>
+        </div>
+        
+      </section>
+      <section class="assinatura">
+        <div class="icones__contato">
+          <li class="lista__contato">
+            <ul class="lista__contato_topico"><a class="lista__contato__link" href="tel:+551125383117"><img class="icones__img" src="/Assents/fone icon.svg" alt="Telefone icone"></a></ul>
+          </li>
+        </div>
+        <p class="assinatura_gustavo">COPYRIGHT © 2024 — DESIGN by Gustavo Julio</p>
+      </section> 
+    </footer>
 
-  <hr />
-
-  <footer class="rodape">
-      <h2 class="rodape__titulo">Grupo Alura</h2>
-      <ul class="lista__rodape">
-        <li class="lista__rodape__titulo">EDUCACÃO</li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/Ellipse 9.svg" alt="Caelum logo"><a href="#" class="lista__rodape__link">Caelum</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/Ellipse 9-1.svg" alt="Casa do Código logo"><a href="#" class="lista__rodape__link">Casa do Código</a>
-        </li>
-      </ul>
-      <ul class="lista__rodape">
-        <li class="lista__rodape__titulo">EDUCAÇÃO ONLINE</li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/Alura.svg" alt="Alura logo"><a href="#" class="lista__rodape__link">Alura</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/AluraEmpresas.svg" alt="Alura Empresas logo"><a href="#" class="lista__rodape__link">Alura Para Empresas</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/AluraLATAM.svg" alt="Alura Latam logo"><a href="#" class="lista__rodape__link">Alura LATAM</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/AluraStart.svg" alt="Alura Start logo"><a href="#" class="lista__rodape__link">Alura Start</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/MusicDot.svg" alt="MusicDot logo"><a href="#" class="lista__rodape__link">MusicDot</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/AluraLingua.svg" alt="Alura Língua logo"><a href="#" class="lista__rodape__link">Alura Língua</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/PM3.svg" alt="PM3 logo"><a href="#" class="lista__rodape__link">PM3</a>
-        </li>
-      </ul>
-      <ul class="lista__rodape">
-        <li class="lista__rodape__titulo">COMUNIDADE</li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/HipstersTech.svg" alt="Hipsters ponto Tech logo"><a href="#" class="lista__rodape__link">Hipsters ponto Tech</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/ScubaDev.svg" alt="Scuba Dev logo"><a href="#" class="lista__rodape__link">Scuba Dev</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/LayersTech.svg" alt="Layers ponto Tech logo"><a href="#" class="lista__rodape__link">Layers ponto Tech</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/LikeABoss.svg" alt="Like a Boss logo"><a href="#" class="lista__rodape__link">Like a Boss</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/CarreiraSemFronteira.svg" alt="Carreira sem Fronteira logo"><a href="#" class="lista__rodape__link">Carreira sem Fronteira</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/HipstersJobs.svg" alt="Hipsters ponto Jobs logo"><a href="#" class="lista__rodape__link">Hipsters ponto Jobs</a>
-        </li>
-        <li class="lista__rodape__item">
-          <img src="/Assents/GUJ.svg" alt="GUJ logo"><a href="#" class="lista__rodape__link">GUJ</a>
-        </li>
-      </ul>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-        const swiper = new Swiper('.swiper', {
-      spaceBetween: 10,
-      slidesPerView: 3,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+          const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      });
+    </script>
 </body>
 
 </html>

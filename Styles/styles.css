@@ -1,0 +1,891 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --fonte-titulo: Dosis;
+  --font-texto: Roboto;
+
+  --cor-branco: #FFFFFF;
+  --cor-laranja: #DBA43B;
+  --cor-dark: #272D3E;
+  --azul-claro: #EDFCFD
+}
+
+body{
+  font-family: var(--font-texto);
+  font-size: 1em;
+}
+
+.cabecalho{
+  background-image: url(/Assents/Background_Main1_TRatado\ de\ anestesiologia\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  padding-bottom: 4em;
+}
+
+.cabecalho__menu{
+  padding: 1em 8em;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.cabecalho__menu__links{
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.cabecalho__menu__link{
+  color: var(--cor-branco);
+  text-decoration: none;
+  opacity: 80%;
+  font-family: var(--fonte-titulo);
+  font-size: 1em;
+}
+
+.cabecalho__menu__botao{
+  padding: 1em 2em;
+  background-color: var(--cor-laranja);
+  border-radius: 6em;
+  color: var(--cor-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+ 
+}
+
+.cabecalho__banner{
+  margin: 1em 5em 5em 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+
+.cabecalho__banner__infos{
+  width: 40%;
+}
+
+h1{
+  text-align: end;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: 3em;
+}
+
+.cabecalho__banner__titulo{
+  width: 100%;
+}
+
+.titulo{
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: 2.5em;
+}
+
+.cabecalho__banner__infos__chamada{
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: 30px;
+}
+
+strong{
+  color: var(--cor-laranja);
+  font-weight: 800;
+}
+
+.cabecalho__banner__imagem{
+  width: 40%;
+  height: auto;
+}
+
+.cabecalho__botoes{
+  display: flex;
+  margin: 1em 0;
+  gap: 1em;
+
+}
+
+.cabecalho__botoes__comprar{
+  padding: 1em 2em;
+  background-color: var(--cor-laranja);
+  border-radius: 6em;
+  color: var(--cor-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  box-shadow: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 0px 4px 10px rgba(0, 186, 199, 0.5);
+}
+
+.cabecalho__botao{
+  display: flex;
+  align-items: center;
+  color: var(--cor-branco);
+  gap: 1em;
+}
+
+.cabecalho__botoes__seta{
+  width: 3em;
+}
+
+.cabecalho__botoes__fazer{
+  font-size: 1em;
+  text-align: start;
+}
+
+.cabecalho__botoes__download{
+  font-size: 1.3em;
+}
+
+.cabecalho__banner__logos{
+  margin-top: 1em;
+
+}
+
+.logos{
+  width: 4em;
+  margin-right: 1em;
+}
+
+.livro{
+  margin: 1em 5em 6em 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+
+}
+
+.livro__imagem{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.livro__imagem__livro{
+  width: 15em;
+}
+
+.livro__informacoes{
+  width: 50%;
+}
+
+.sobre__botao{
+  width: 100%;
+
+}
+
+.sobre__livro{
+  padding: 4em 0;
+}
+
+.sobre__botao__lista{
+  display: flex;
+  align-items: center;
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+  width: 90%;
+  justify-content: center;
+  padding: 1em 0;
+  border-radius: 1em;
+  font-size: 1.5em;
+  font-weight: 600;
+  box-shadow: 0px 4px 10px rgba(0, 186, 199, 0.5);
+}
+
+.sobre__botao_comprar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  width: 50%;
+  border-right: solid var(--cor-branco) 1px;
+  gap: 0.5em;
+}
+
+.sobre__botao_baixar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  width: 50%;
+  gap: 0.5em;
+}
+
+.livro__informacoes{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.livro_sobre{
+  font-family: var(--fonte-titulo);
+  font-size: 2em;
+}
+
+.livro_texto{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.livro__lista{
+  list-style: none;
+  border: 1em 0;
+  gap: 2em;
+}
+
+.livro__lista__item{
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  gap: 1em;
+}
+
+.sobre__autores{
+  text-align: center;
+  background-image: url(/Assents/SVG/Rectangle\ 641.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em 0 7em 0;
+  margin-bottom: 18em;
+  background-clip: 75%;
+  padding: 6em 0;
+}
+
+
+
+
+.sobre__autores-titulo{
+  margin: 1em;
+  font-family: var(--fonte-titulo);
+}
+
+
+
+.person{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  box-sizing: content-box;
+  
+
+}
+
+.autor_descricao{
+  font-size: 1em;
+  text-align: start;
+  margin: auto;
+  height: 75%;
+  font-size: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  box-sizing: content-box;
+}
+
+.nome_foto{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  height: 100%;
+  
+}
+
+.autor__nome{
+  font-weight: 600;
+}
+.autor__foto{
+  width: 3em;
+  height: 3em;
+  border-radius: 10em;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev{
+  margin: 0 0.5em 0 3em;
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  border-width: 0;
+  box-shadow: 0px 4px 10px rgba(0, 186, 199, 0.5);
+
+}
+
+.next{
+  margin: 0 3em 0 0.5em;
+  color: var(--cor-branco);
+  background-color: var(--cor-laranja);
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  border-width: 0;
+  box-shadow: 0px 4px 10px rgba(0, 186, 199, 0.5);
+}
+
+.preview{
+  background-color: var(--azul-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 7em;
+  
+}
+
+.preview__titulo{
+  margin: 0 10em;
+}
+
+.livro__aberto{
+  width: 75%;
+  margin: 3em 0;
+}
+
+.azul{
+  background-color: var(--cor-dark);
+  padding: 1em 2em;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(27, 43, 81, 0.5);
+}
+
+footer{
+  background-color: var(--cor-dark);
+  padding: 3em 0 0 0;
+  
+
+}
+
+.final{
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 8em;
+}
+
+.rodape{
+  width: 40%;
+}
+
+.rodape_01{
+  font-family: var(--fonte-titulo);
+  font-size: 3em;
+  text-align: start;
+  color: var(--cor-branco);
+}
+
+.rodape__links{
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho__rodape__link{
+  text-align: end;
+  font-family: var(--font-texto);
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+
+.assinatura_gustavo {
+  text-align: center;
+  padding: 1em;
+  color: var(--cor-branco);
+  opacity: 50;
+}
+
+.botão__braanco{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.comprar__link{
+  text-decoration: none;
+  color: var(--cor-branco);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.botao__baixar{
+  text-decoration: none;
+  color: var(--cor-branco);
+  display: flex;
+}
+
+.botão__braanco{
+  color: var(--cor-branco);
+  text-decoration: none;
+}
+
+.final__institucional{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.final__institucional{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.final__institucional-titulo{
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: 2em;
+}
+
+.final__institucional-link{
+  display: flex;
+  gap: 1em;
+}
+
+.institucional__img{
+  width: 1em;
+}
+
+.final__institucional-link{
+  color: var(--azul-claro);
+  text-decoration: none;
+}
+
+.video__001{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arquivo__video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecalho__menu__link:hover {
+  opacity: 1;
+}
+
+.cabecalho__botoes__comprar:hover,
+.cabecalho__menu__botao:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-laranja);
+}
+
+.cabecalho__botoes__download:hover{
+  color: var(--cor-laranja);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--cor-dark);
+}
+
+.sobre__botao__lista:hover,
+.sobre__botao_comprar:hover,
+.sobre__botao_baixar:hover,
+.comprar__link:hover,.botão__braanco:hover{
+  color: var(--cor-dark);
+}
+
+.sobre__botao_comprar:hover,
+.sobre__botao_baixar:hover {
+  border-color: var(--cor-branco);
+}
+
+.cabecalho__botoes__comprar:hover,
+.cabecalho__botao__baixar:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.video__002{
+  display: none;
+}
+
+.codigo__001{
+  display: block;
+}
+
+.video__003{
+  display: none;
+}
+
+.icones__contato{
+  display: none;
+}
+
+.logo__rodape{
+  display: none;
+}
+
+@media (max-width: 896px) {
+  .cabecalho__menu__links{
+    display: none;
+  }
+
+  .video__003{
+    display: none;
+  }
+
+  .cabecalho__menu__botao{
+    display: none;
+  }
+
+  .cabecalho__banner{
+    flex-direction: column-reverse;
+  }
+
+  .cabecalho__banner__infos{
+    width: 100%;
+  }
+
+  .cabecalho__banner__imagem{
+    width: 100%;
+
+    
+  }
+
+  .cabecalho{
+    background-color: var(--cor-dark);
+    background-size: 100%;
+    margin: 0;
+    gap: 2em;
+  }
+
+  .cabecalho__banner__infos{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .cabecalho__banner__infos__chamada{
+    font-size: 4em;
+  }
+
+  .cabecalho__botoes{
+    flex-direction: column;
+    width: 75%;
+  }
+
+  .cabecalho__botoes__comprar{
+    font-size: 2em;
+    justify-content: center;
+  }
+
+  .seta__responsiva{
+    width: 1em;
+  }
+
+  .cabecalho__botao,.azul{
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .cabecalho__botoes__seta{
+    width: 4em;
+  }
+
+  .cabecalho__botoes__fazer{
+    font-size: 2em;
+  }
+
+  .cabecalho__botoes__download{
+    font-size: 1.5em;
+  }
+
+  .logos{
+    width: 10em;
+  }
+
+  .livro{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .livro__imagem{
+    width: 90%;
+  }
+
+  .livro__imagem__livro{
+    width: 100%;
+  }
+
+  .sobre__botao__lista{
+    flex-direction: column;
+    background: none;
+    box-shadow: none;
+    gap: 1em;
+    width: 100%;
+  }
+
+  .sobre__botao_comprar{
+    background-color: var(--cor-laranja);
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  .sobre__botao_baixar{
+    flex-direction: row-reverse;
+    background-color: var(--cor-dark);
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  .livro__informacoes{
+    width: 100%;
+  }
+
+  .livro_sobre{
+    font-size: 2em;
+  }
+
+  .livro_texto{
+    font-size: 1.5em;
+  }
+
+  .livro__lista__item{
+    font-size: 1.5em;
+  }
+
+  .video{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arquivo__video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video__002{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video__001{
+    display: none;
+  }
+
+  .codigo__001{
+    width: 100%;
+  }
+
+
+  .preview__titulo{
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .livro__aberto{
+    width: 25em;
+  }
+
+  footer{
+    padding: 1em;
+  }
+
+  .final{
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  .rodape{
+    display: none;
+  }
+
+  .final__institucional{
+    width: 100%;
+  }
+
+  .logo__rodape{
+    width: 5em;
+  }
+
+  .contato{
+    display: none;
+  }
+
+  .sobre__autores{
+    margin: 4em;
+  }
+
+  .cabecalho__banner__infos{
+    gap: 0.5em;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .cabecalho{
+    gap: 0.5em;
+    padding: 0;
+  }
+
+  .cabecalho__banner__titulo{
+    width: 100%;
+    
+  }
+
+  .cabecalho__banner {
+    margin: 1em;
+    gap: 0.25em;
+  }
+
+  .abecalho__banner__infos{
+    gap: 0;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
+  .titulo{
+    font-size: 24px;
+  }
+
+  .cabecalho__banner__infos__chamada{
+    font-size: 1.5em;
+  }
+
+  .cabecalho__botoes{
+    margin: 0;
+  }
+
+  .cabecalho__botoes__comprar{
+    font-size: 1em;
+    margin: 0;
+
+  }
+
+  .cabecalho__botoes__fazer{
+    font-size: 14px;
+  }
+
+  .cabecalho__botoes__download{
+    font-size: 16px;
+  }
+
+  .cabecalho__botao,.azul{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .botao__baixar{
+    width: 2em;
+  }
+
+  .logos{
+    display: none;
+  }
+
+  .sobre__livro{
+    padding: 1em;
+  }
+
+  .livro{
+    margin: 0;
+  }
+
+  .livro__imagem__livro{
+    width: 100%;
+  }
+
+  .sobre__botao_comprar{
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  .comprar__link{
+    font-size: 24px;
+    padding: 0.1em;
+  }
+
+  .sobre__botao_baixar{
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  .livro_sobre{
+    font-size: 24px;
+  }
+
+  .livro_texto{
+    font-size: 16px 
+  }
+
+  .livro__lista__item{
+    font-size: 14px;
+  }
+
+  .video__003{
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video__002{
+    display: none;
+  }
+
+  .sobre__autores-titulo{
+    font-size: 24px;
+  }
+
+  .autor_descricao{
+    font-size: 14px;
+  }
+
+  .preview{
+    padding: 1em;
+  }
+
+  .preview__titulo{
+    font-size: 24px;
+  }
+
+  .livro__aberto{
+    width: 90%;
+  }
+
+  .cabecalho__botoes__seta{
+    width: 75%;
+  }
+
+    .cabecalho__botao, .azul{
+      padding: 1em;
+      width: 75%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .final{
+      margin: 1em;
+    }
+}
